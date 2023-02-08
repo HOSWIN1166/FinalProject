@@ -4,6 +4,6 @@
     {
         public int Id { get; set; }
         public string? Titel { get; set; }
-        public string? UnitPrice { get; set; }
+        public int UnitPrice { get; set; }
     }
 }

@@ -9,6 +9,6 @@ namespace ViewModel.Dtos
     public class ProductSaveDto
     {
         public string? Title { get; set; }
-        public string? UnitPrice { get; set; }
+        public int UnitPrice { get; set; }
     }
 }

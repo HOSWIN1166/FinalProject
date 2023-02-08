@@ -16,7 +16,7 @@ namespace View
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            dgvPerson.DataSource = _personViewModel.FillGrid();
+            
             dgvProduct.DataSource = _productViewModel.FillGrid();
         }
 
@@ -34,7 +34,7 @@ namespace View
             var productSaveDto = new ProductSaveDto()
             {
                 Title=txtTitle.Text,
-                UnitPrice =txtUnitPrice.Text,
+                UnitPrice =System.Convert.ToInt32( txtUnitPrice.Text),
             };
             _productViewModel.Save(productSaveDto);
             MessageBox.Show("Save shod zay");
