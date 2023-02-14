@@ -42,8 +42,6 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtUnitPrice = new System.Windows.Forms.TextBox();
-            this.dgvProduct = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -98,7 +96,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(319, 87);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 15);
+            this.label2.Size = new System.Drawing.Size(35, 15);
             this.label2.TabIndex = 5;
             this.label2.Text = "Title :";
             // 
@@ -166,21 +164,12 @@
             this.txtUnitPrice.Size = new System.Drawing.Size(160, 23);
             this.txtUnitPrice.TabIndex = 13;
             // 
-            // dgvProduct
-            // 
-            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduct.Location = new System.Drawing.Point(380, 167);
-            this.dgvProduct.Name = "dgvProduct";
-            this.dgvProduct.RowTemplate.Height = 25;
-            this.dgvProduct.Size = new System.Drawing.Size(420, 282);
-            this.dgvProduct.TabIndex = 15;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvProduct);
+            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ClientSize = new System.Drawing.Size(628, 223);
             this.Controls.Add(this.txtUnitPrice);
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.txtLastName);
@@ -197,7 +186,6 @@
             this.Controls.Add(this.btnSave);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,6 +207,5 @@
         private TextBox txtLastName;
         private TextBox txtTitle;
         private TextBox txtUnitPrice;
-        private DataGridView dgvProduct;
     }
 }

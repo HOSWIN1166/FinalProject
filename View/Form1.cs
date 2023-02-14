@@ -16,8 +16,11 @@ namespace View
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            
-            dgvProduct.DataSource = _productViewModel.FillGrid();
+            PersonFrom personFrom = new PersonFrom();
+            personFrom.ShowDialog();
+            ProductFrom productFrom = new ProductFrom();
+            productFrom.ShowDialog();
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)

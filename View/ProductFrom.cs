@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ViewModel;
 
 namespace View
 {
     public partial class ProductFrom : Form
     {
+        private readonly ProductViewModel _productViewModel;
         public ProductFrom()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace View
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-
+            dgvProduct.DataSource = _productViewModel.FillGrid();
         }
     }
 }
