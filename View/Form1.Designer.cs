@@ -187,7 +187,7 @@
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnSave);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Final Project";
             this.ResumeLayout(false);
             this.PerformLayout();
 
