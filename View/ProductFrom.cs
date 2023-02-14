@@ -17,6 +17,7 @@ namespace View
         public ProductFrom()
         {
             InitializeComponent();
+            _productViewModel = new ProductViewModel();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

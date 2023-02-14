@@ -20,9 +20,7 @@ namespace View
             personFrom.ShowDialog();
             ProductFrom productFrom = new ProductFrom();
             productFrom.ShowDialog();
-
         }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             #region [-Save Person-]
