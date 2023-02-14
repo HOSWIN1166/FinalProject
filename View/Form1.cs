@@ -1,3 +1,4 @@
+using System.Reflection;
 using ViewModel;
 using ViewModel.Dtos;
 
@@ -39,6 +40,16 @@ namespace View
             };
             _productViewModel.Save(productSaveDto);
             MessageBox.Show("Save shod zay");
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
