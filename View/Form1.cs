@@ -33,24 +33,27 @@ namespace View
             _personViewModel.Save(personSaveDto);
             MessageBox.Show("Save shod balamisar");
             #endregion
+            #region [-Save Product-]
             var productSaveDto = new ProductSaveDto()
             {
-                Title=txtTitle.Text,
-                UnitPrice =System.Convert.ToInt32( txtUnitPrice.Text),
+                Title = txtTitle.Text,
+                UnitPrice = System.Convert.ToInt32(txtUnitPrice.Text),
             };
             _productViewModel.Save(productSaveDto);
             MessageBox.Show("Save shod zay");
+            #endregion
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-
+            UpdateFrom updateFrom = new UpdateFrom();
+            updateFrom.ShowDialog();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            PersonAndProductDelete DeleteFrom = new PersonAndProductDelete();
-            DeleteFrom.ShowDialog();
+            PersonAndProductDelete personAndProductDelete = new PersonAndProductDelete();
+            personAndProductDelete.ShowDialog();
         }
     }
 }

@@ -30,5 +30,13 @@ namespace ViewModel
             };
             _personServices.Insert(person); 
         }
+        public void Delete(PersonAndProductDeleteDto personAndProductDeleteDto)
+        {
+            var person = new Person()
+            {
+                Id= personAndProductDeleteDto.Id,
+            };
+            _personServices.Remove(person);
+        }
     }
 }

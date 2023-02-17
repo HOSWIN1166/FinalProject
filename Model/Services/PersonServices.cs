@@ -57,5 +57,28 @@ namespace Model.Services
                 }
             }
         }
+        public void Remove(Person person)
+        {
+            using (var context = new OnlineShopDbContext())
+            {
+                try
+                {
+                    context.Person.Remove(person);
+                    context.SaveChanges();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                finally
+                {
+                    if (context != null)
+                    {
+                        context.Dispose();
+                    }
+                }
+            }
+        }
     }
 }
