@@ -3,6 +3,7 @@ using Model.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -63,7 +64,8 @@ namespace Model.Services
             {
                 try
                 {
-                    context.Person.Remove(person);
+                    var people = context.Person.Where(d => d.Id == person.Id).First();
+                    context.Person.Remove(people);
                     context.SaveChanges();
                 }
                 catch (Exception)

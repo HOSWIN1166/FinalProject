@@ -52,7 +52,7 @@ namespace View
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            PersonAndProductDelete personAndProductDelete = new PersonAndProductDelete();
+            DeleteFrom personAndProductDelete = new DeleteFrom();
             personAndProductDelete.ShowDialog();
         }
     }

@@ -62,6 +62,7 @@ namespace Model.Services
             {
                 try
                 {
+                    var products = context.Product.Where(d => d.Id == product.Id).First();
                     context.Product.Remove(product);
                     context.SaveChanges();
                 }

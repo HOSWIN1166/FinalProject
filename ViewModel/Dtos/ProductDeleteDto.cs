@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ViewModel.Dtos
 {
-    public class PersonAndProductDeleteDto
+    public class ProductDeleteDto
     {
         public int Id { get; set; }
     }

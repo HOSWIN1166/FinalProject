@@ -1,15 +1,5 @@
-﻿using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using ViewModel;
 using ViewModel.Dtos;
-using ViewModel;
 
 namespace View
 {
@@ -31,17 +21,20 @@ namespace View
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            var personDeleteDto = new PersonAndProductDeleteDto()
+            var Input = txtPersonDelete.Text;
+            var PersonId = int.Parse(Input);
+            var personDeleteDto = new PersonDeleteDto()
             {
-                Id = System.Convert.ToInt32(txtDelete.Text),
+                Id= PersonId,
             };
             _personViewModel.Delete(personDeleteDto);
             MessageBox.Show("Delete Kardiaaa , dir omadi zod naro");
-            var ProductDeleteDt = new PersonAndProductDeleteDto()
+
+            var productDeleteDto = new ProductDeleteDto()
             {
-                Id = System.Convert.ToInt32(txtDelete.Text),
+                Id = System.Convert.ToInt32(txtProductDelete.Text.ToString()),
             };
-            _personViewModel.Delete(ProductDeleteDt);
+            _personViewModel.Delete(productDeleteDto);
             MessageBox.Show("Delete Kardiaaa , dir omadi zod naro");
         }
     }

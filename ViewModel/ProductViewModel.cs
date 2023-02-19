@@ -31,11 +31,11 @@ namespace ViewModel
             };
             _productService.Insert(product);
         }
-        public void Delete(PersonAndProductDeleteDto personAndProductDeleteDto)
+        public void Delete(ProductDeleteDto productDeleteDto)
         {
             var product = new Product()
             {
-                Id = personAndProductDeleteDto.Id,
+                Id = productDeleteDto.Id,
             };
             _productService.Remove(product);
         }
