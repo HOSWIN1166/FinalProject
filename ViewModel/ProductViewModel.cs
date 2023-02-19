@@ -35,7 +35,7 @@ namespace ViewModel
         {
             var product = new Product()
             {
-                Id = productDeleteDto.ProductId,
+                Id = productDeleteDto.Id,
             };
             _productService.Remove(product);
         }

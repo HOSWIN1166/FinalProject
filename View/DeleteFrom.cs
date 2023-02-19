@@ -37,10 +37,9 @@ namespace View
             var PersonId = int.Parse(Input);
             var productDeleteDto = new ProductDeleteDto()
             {
-                ProductId= PersonId,
+                Id= PersonId,
             };
-            _personViewModel.Delete(productDeleteDto);
+            _productViewModel.Delete(productDeleteDto);
             MessageBox.Show("Product Deleted");
-        }
-    }
+        }}
 }
