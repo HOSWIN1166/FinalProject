@@ -39,5 +39,15 @@ namespace ViewModel
             };
             _productService.Remove(product);
         }
+        public void Update (ProductUpdateDto productUpdateDto)
+        {
+            var products = new Product()
+            {
+                Id= productUpdateDto.Id,
+                Titel = productUpdateDto.Title,
+                UnitPrice = productUpdateDto.UnitPrice,
+            };
+            _productService.Update(products);
+        }
     }
 }

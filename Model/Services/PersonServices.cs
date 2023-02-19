@@ -82,5 +82,30 @@ namespace Model.Services
                 }
             }
         }
+        public void Update(Person person)
+        {
+            using (var context = new OnlineShopDbContext())
+            {
+                try
+                {
+                    var people = context.Person.Where(p => p.Id == person.Id).First();
+                    people.FirstName = person.FirstName;
+                    people.LastName = person.LastName;
+                    context.SaveChanges();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                finally
+                {
+                    if (context != null)
+                    {
+                        context.Dispose();
+                    }
+                }
+            }
+        }
     }
 }

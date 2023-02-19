@@ -80,5 +80,30 @@ namespace Model.Services
                 }
             }
         }
+        public void Update(Product product)
+        {
+            using (var context = new OnlineShopDbContext())
+            {
+                try
+                {
+                    var Products = context.Product.Where(d => d.Id == product.Id).First();
+                    Products.Titel = product.Titel;
+                    Products.UnitPrice = product.UnitPrice;
+                    context.SaveChanges();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+                finally
+                {
+                    if (context != null)
+                    {
+                        context.Dispose();
+                    }
+                }
+            }
+        }
     }
 }
