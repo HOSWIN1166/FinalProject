@@ -52,8 +52,8 @@ namespace View
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            DeleteFrom personAndProductDelete = new DeleteFrom();
-            personAndProductDelete.ShowDialog();
+            DeleteFrom deleteFrom = new DeleteFrom();
+            deleteFrom.ShowDialog();
         }
     }
 }

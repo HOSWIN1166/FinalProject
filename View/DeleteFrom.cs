@@ -3,11 +3,11 @@ using ViewModel.Dtos;
 
 namespace View
 {
-    public partial class PersonAndProductDelete : Form
+    public partial class DeleteFrom : Form
     {
         private readonly PersonViewModel _personViewModel;
         private readonly ProductViewModel _productViewModel;
-        public PersonAndProductDelete()
+        public DeleteFrom()
         {
             InitializeComponent();
             _personViewModel = new PersonViewModel();
@@ -28,14 +28,19 @@ namespace View
                 Id= PersonId,
             };
             _personViewModel.Delete(personDeleteDto);
-            MessageBox.Show("Delete Kardiaaa , dir omadi zod naro");
+            MessageBox.Show("Person Deleted");
+        }
 
+        private void btnProductDelete_Click(object sender, EventArgs e)
+        {
+            var Input = txtProductDelete.Text;
+            var PersonId = int.Parse(Input);
             var productDeleteDto = new ProductDeleteDto()
             {
-                Id = System.Convert.ToInt32(txtProductDelete.Text.ToString()),
+                ProductId= PersonId,
             };
             _personViewModel.Delete(productDeleteDto);
-            MessageBox.Show("Delete Kardiaaa , dir omadi zod naro");
+            MessageBox.Show("Product Deleted");
         }
     }
 }
