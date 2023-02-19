@@ -64,7 +64,7 @@ namespace Model.Services
             {
                 try
                 {
-                    var people = context.Person.Where(d => d.Id == person.Id).First();
+                    var people = context.Person.Where(p => p.Id == person.Id).First();
                     context.Person.Remove(people);
                     context.SaveChanges();
                 }
