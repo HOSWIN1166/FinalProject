@@ -28,7 +28,7 @@ namespace ViewModel
                 FirstName = personSaveDto.FirstName,
                 LastName = personSaveDto.LastName,
             };
-            _personServices.Insert(person); 
+            _personServices.Insert(person);
         }
         public void Delete(PersonDeleteDto personDeleteDto)
         {
@@ -42,11 +42,11 @@ namespace ViewModel
         {
             var person = new Person()
             {
-                Id= personUpdateDto.Id,
-                FirstName=personUpdateDto.NewFirstName,
-                LastName=personUpdateDto.NewLastName,
+                Id = personUpdateDto.Id,
+                FirstName = personUpdateDto.NewFirstName,
+                LastName = personUpdateDto.NewLastName,
             };
             _personServices.Update(person);
-        }
+        } 
     }
 }
