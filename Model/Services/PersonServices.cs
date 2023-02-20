@@ -65,6 +65,7 @@ namespace Model.Services
                 try
                 {
                     var people = context.Person.Where(p => p.Id == person.Id).First();
+                    //Table Person ba DbSet be vojod omade, ba "context" ke be database vasle. az Where astefade mishe ke ta address va motaghayer khodemon ro moarefi konim. p.Id migharde har ja ba person.Id barabar ya yeki khodesh ro peyda kone, meghdar khodesh ro ham ke ma midim. First() karesh ine ke avalin ghozinee ke peyda kard ro baraye ma antekhab kone.
                     context.Person.Remove(people);
                     context.SaveChanges();
                 }
