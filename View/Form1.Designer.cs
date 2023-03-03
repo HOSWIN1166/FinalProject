@@ -40,8 +40,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
-            this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtUnitPrice = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnSave
@@ -152,19 +152,19 @@
             this.txtLastName.Size = new System.Drawing.Size(162, 23);
             this.txtLastName.TabIndex = 11;
             // 
-            // txtTitle
-            // 
-            this.txtTitle.Location = new System.Drawing.Point(402, 84);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(160, 23);
-            this.txtTitle.TabIndex = 12;
-            // 
             // txtUnitPrice
             // 
             this.txtUnitPrice.Location = new System.Drawing.Point(402, 129);
             this.txtUnitPrice.Name = "txtUnitPrice";
             this.txtUnitPrice.Size = new System.Drawing.Size(160, 23);
             this.txtUnitPrice.TabIndex = 13;
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(402, 84);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(160, 23);
+            this.txtTitle.TabIndex = 12;
             // 
             // Form1
             // 
@@ -207,7 +207,7 @@
         private Label label6;
         private TextBox txtFirstName;
         private TextBox txtLastName;
-        private TextBox txtTitle;
         private TextBox txtUnitPrice;
+        private TextBox txtTitle;
     }
 }

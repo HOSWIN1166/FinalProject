@@ -16,5 +16,17 @@ namespace View
         {
             InitializeComponent();
         }
+
+        private void btnPersonMain_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+        }
+
+        private void btnProductMain_Click(object sender, EventArgs e)
+        {
+            ProductPage page = new ProductPage();
+            page.ShowDialog();
+        }
     }
 }
