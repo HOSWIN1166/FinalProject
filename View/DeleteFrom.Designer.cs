@@ -49,9 +49,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(350, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 15);
+            this.label1.Size = new System.Drawing.Size(68, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Product ID :";
+            this.label1.Text = "Product Id :";
             // 
             // btnClose
             // 

@@ -19,8 +19,7 @@ namespace View
         {
             PersonFrom personFrom = new PersonFrom();
             personFrom.ShowDialog();
-            ProductFrom productFrom = new ProductFrom();
-            productFrom.ShowDialog();
+
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -33,15 +32,7 @@ namespace View
             _personViewModel.Save(personSaveDto);
             MessageBox.Show("Save shod balamisar");
             #endregion
-            #region [-Save Product-]
-            var productSaveDto = new ProductSaveDto()
-            {
-                Title = txtTitle.Text,
-                UnitPrice = System.Convert.ToInt32(txtUnitPrice.Text),
-            };
-            _productViewModel.Save(productSaveDto);
-            MessageBox.Show("Save shod zay");
-            #endregion
+          
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)

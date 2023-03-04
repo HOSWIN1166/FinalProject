@@ -42,20 +42,5 @@ namespace View
             _personViewModel.Update(personUpdateDto);
             MessageBox.Show("Updated succesfully");
         }
-
-        private void btnProductUpdate_Click(object sender, EventArgs e)
-        {
-            var id = Int32.Parse(txtUpdateIdProduct.Text.ToString());
-            var title = txtUpdateTitle.Text.ToString();
-            var unitPrice = Int32.Parse(txtUpdateUnitPrice.Text.ToString());
-            var productUpdateDto = new ProductUpdateDto()
-            {
-                Id = id,
-                Title = title,
-                UnitPrice = unitPrice,
-            };
-            _productViewModel.Update(productUpdateDto);
-            MessageBox.Show("Updated succesfully");
-        }
     }
 }

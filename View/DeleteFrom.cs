@@ -41,5 +41,6 @@ namespace View
             };
             _productViewModel.Delete(productDeleteDto);
             MessageBox.Show("Product Deleted");
-        }}
+        }
+    }
 }
