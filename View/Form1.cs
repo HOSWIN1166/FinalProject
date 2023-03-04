@@ -52,8 +52,14 @@ namespace View
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            DeleteFrom deleteFrom = new DeleteFrom();
-            deleteFrom.ShowDialog();
+            var Input = txtPersonDelete.Text;
+            var PersonId = int.Parse(Input);
+            var personDeleteDto = new PersonDeleteDto()
+            {
+                Id = PersonId,
+            };
+            _personViewModel.Delete(personDeleteDto);
+            MessageBox.Show("Person Deleted");
         }
     }
 }

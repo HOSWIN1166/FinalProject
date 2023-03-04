@@ -43,6 +43,8 @@
             this.txtUpdateIdPerson = new System.Windows.Forms.TextBox();
             this.txtUpdateFname = new System.Windows.Forms.TextBox();
             this.txtUpdateLname = new System.Windows.Forms.TextBox();
+            this.txtPersonDelete = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSave
@@ -106,9 +108,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Font = new System.Drawing.Font("Stencil", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(-3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 15);
+            this.label5.Size = new System.Drawing.Size(91, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "Person";
             // 
@@ -174,12 +177,30 @@
             this.txtUpdateLname.Size = new System.Drawing.Size(170, 23);
             this.txtUpdateLname.TabIndex = 17;
             // 
+            // txtPersonDelete
+            // 
+            this.txtPersonDelete.Location = new System.Drawing.Point(650, 101);
+            this.txtPersonDelete.Name = "txtPersonDelete";
+            this.txtPersonDelete.Size = new System.Drawing.Size(170, 23);
+            this.txtPersonDelete.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(609, 104);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 15);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Id :";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(851, 307);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtPersonDelete);
             this.Controls.Add(this.txtUpdateLname);
             this.Controls.Add(this.txtUpdateFname);
             this.Controls.Add(this.txtUpdateIdPerson);
@@ -219,5 +240,7 @@
         private TextBox txtUpdateIdPerson;
         private TextBox txtUpdateFname;
         private TextBox txtUpdateLname;
+        private TextBox txtPersonDelete;
+        private Label label7;
     }
 }
