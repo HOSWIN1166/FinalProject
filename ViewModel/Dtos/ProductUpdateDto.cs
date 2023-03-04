@@ -9,7 +9,7 @@ namespace ViewModel.Dtos
     public class ProductUpdateDto
     {
         public int Id { get; set; }
-        public string Title { get; set; }
+        public string? Title { get; set; }
         public int UnitPrice { get; set; }
     }
 }

@@ -28,30 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtProductDelete = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnPersonDelete = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPersonDelete = new System.Windows.Forms.TextBox();
-            this.btnProductDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // txtProductDelete
-            // 
-            this.txtProductDelete.Location = new System.Drawing.Point(425, 38);
-            this.txtProductDelete.Name = "txtProductDelete";
-            this.txtProductDelete.Size = new System.Drawing.Size(165, 23);
-            this.txtProductDelete.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(350, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Product Id :";
             // 
             // btnClose
             // 
@@ -89,29 +70,16 @@
             this.txtPersonDelete.Size = new System.Drawing.Size(165, 23);
             this.txtPersonDelete.TabIndex = 5;
             // 
-            // btnProductDelete
-            // 
-            this.btnProductDelete.Location = new System.Drawing.Point(458, 87);
-            this.btnProductDelete.Name = "btnProductDelete";
-            this.btnProductDelete.Size = new System.Drawing.Size(110, 23);
-            this.btnProductDelete.TabIndex = 6;
-            this.btnProductDelete.Text = "Product Delete";
-            this.btnProductDelete.UseVisualStyleBackColor = true;
-            this.btnProductDelete.Click += new System.EventHandler(this.btnProductDelete_Click);
-            // 
             // DeleteFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(634, 162);
-            this.Controls.Add(this.btnProductDelete);
+            this.ClientSize = new System.Drawing.Size(353, 162);
             this.Controls.Add(this.txtPersonDelete);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnPersonDelete);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtProductDelete);
             this.Name = "DeleteFrom";
             this.Text = "DeleteFrom";
             this.ResumeLayout(false);
@@ -120,13 +88,9 @@
         }
 
         #endregion
-
-        private TextBox txtProductDelete;
-        private Label label1;
         private Button btnClose;
         private Button btnPersonDelete;
         private Label label2;
         private TextBox txtPersonDelete;
-        private Button btnProductDelete;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
 using ViewModel;
 using ViewModel.Dtos;
 
@@ -37,6 +38,32 @@ namespace View
             _productViewModel.Save(productSaveDto);
             MessageBox.Show("Save shod zay");
             #endregion
+        }
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            var id = Int32.Parse(txtUpdateIdProduct.Text.ToString());
+            var title = txtUpdateTitle.Text.ToString();
+            var unitPrice = Int32.Parse(txtUpdateUnitPrice.Text.ToString());
+            var productUpdateDto = new ProductUpdateDto()
+            {
+                Id = id,
+                Title = title,
+                UnitPrice = unitPrice,
+            };
+            _productViewModel.Update(productUpdateDto);
+            MessageBox.Show("Updated succesfully");
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var Input = txtProductDelete.Text;
+            var PersonId = int.Parse(Input);
+            var productDeleteDto = new ProductDeleteDto()
+            {
+                Id = PersonId,
+            };
+            _productViewModel.Delete(productDeleteDto);
+            MessageBox.Show("Product Deleted");
         }
     }
 }

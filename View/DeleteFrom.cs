@@ -33,14 +33,7 @@ namespace View
 
         private void btnProductDelete_Click(object sender, EventArgs e)
         {
-            var Input = txtProductDelete.Text;
-            var PersonId = int.Parse(Input);
-            var productDeleteDto = new ProductDeleteDto()
-            {
-                Id= PersonId,
-            };
-            _productViewModel.Delete(productDeleteDto);
-            MessageBox.Show("Product Deleted");
+
         }
     }
 }
