@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -45,17 +44,8 @@
             this.txtUpdateTitle = new System.Windows.Forms.TextBox();
             this.txtUpdateUnitPrice = new System.Windows.Forms.TextBox();
             this.txtProductDelete = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(154, 150);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 0;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnRefresh
             // 
@@ -194,6 +184,16 @@
             this.txtProductDelete.Size = new System.Drawing.Size(173, 23);
             this.txtProductDelete.TabIndex = 17;
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(154, 150);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 0;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // ProductPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -225,8 +225,6 @@
         }
 
         #endregion
-
-        private Button btnSave;
         private Button btnRefresh;
         private Button btnUpdate;
         private Button btnDelete;
@@ -243,5 +241,6 @@
         private TextBox txtUpdateTitle;
         private TextBox txtUpdateUnitPrice;
         private TextBox txtProductDelete;
+        private Button btnSave;
     }
 }

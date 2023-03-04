@@ -37,8 +37,17 @@ namespace View
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            UpdateFrom updateFrom = new UpdateFrom();
-            updateFrom.ShowDialog();
+            var id = Int32.Parse(txtUpdateIdPerson.Text.ToString());
+            var firstName = txtUpdateFname.Text.ToString();
+            var lastName = txtUpdateLname.Text.ToString();
+            var personUpdateDto = new PersonUpdateDto()
+            {
+                Id = id,
+                NewFirstName = firstName,
+                NewLastName = lastName,
+            };
+            _personViewModel.Update(personUpdateDto);
+            MessageBox.Show("Updated succesfully");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
