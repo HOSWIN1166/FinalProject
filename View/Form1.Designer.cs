@@ -45,6 +45,8 @@
             this.txtUpdateLname = new System.Windows.Forms.TextBox();
             this.txtPersonDelete = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.dgvPerson = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPerson)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -59,7 +61,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(416, 272);
+            this.btnRefresh.Location = new System.Drawing.Point(13, 317);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 1;
@@ -109,11 +111,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Stencil", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(-3, 0);
+            this.label5.Location = new System.Drawing.Point(609, 314);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 25);
+            this.label5.Size = new System.Drawing.Size(147, 25);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Person";
+            this.label5.Text = "Person Page";
             // 
             // txtFirstName
             // 
@@ -193,12 +195,22 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Id :";
             // 
+            // dgvPerson
+            // 
+            this.dgvPerson.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPerson.Location = new System.Drawing.Point(117, 219);
+            this.dgvPerson.Name = "dgvPerson";
+            this.dgvPerson.RowTemplate.Height = 25;
+            this.dgvPerson.Size = new System.Drawing.Size(374, 244);
+            this.dgvPerson.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(851, 307);
+            this.ClientSize = new System.Drawing.Size(851, 462);
+            this.Controls.Add(this.dgvPerson);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtPersonDelete);
             this.Controls.Add(this.txtUpdateLname);
@@ -218,6 +230,7 @@
             this.Controls.Add(this.btnSave);
             this.Name = "Form1";
             this.Text = "Person Page";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPerson)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +255,6 @@
         private TextBox txtUpdateLname;
         private TextBox txtPersonDelete;
         private Label label7;
+        private DataGridView dgvPerson;
     }
 }

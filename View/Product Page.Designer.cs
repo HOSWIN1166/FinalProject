@@ -45,12 +45,14 @@
             this.txtUpdateUnitPrice = new System.Windows.Forms.TextBox();
             this.txtProductDelete = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.dgvProduct = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRefresh
             // 
             this.btnRefresh.AccessibleDescription = "";
-            this.btnRefresh.Location = new System.Drawing.Point(416, 272);
+            this.btnRefresh.Location = new System.Drawing.Point(13, 317);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 1;
@@ -82,11 +84,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Stencil", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(-3, 0);
+            this.label1.Location = new System.Drawing.Point(609, 314);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 25);
+            this.label1.Size = new System.Drawing.Size(161, 25);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Product";
+            this.label1.Text = "Product Page";
             // 
             // label2
             // 
@@ -194,12 +196,22 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // dgvProduct
+            // 
+            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduct.Location = new System.Drawing.Point(117, 219);
+            this.dgvProduct.Name = "dgvProduct";
+            this.dgvProduct.RowTemplate.Height = 25;
+            this.dgvProduct.Size = new System.Drawing.Size(374, 244);
+            this.dgvProduct.TabIndex = 18;
+            // 
             // ProductPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(851, 307);
+            this.ClientSize = new System.Drawing.Size(851, 462);
+            this.Controls.Add(this.dgvProduct);
             this.Controls.Add(this.txtProductDelete);
             this.Controls.Add(this.txtUpdateUnitPrice);
             this.Controls.Add(this.txtUpdateTitle);
@@ -219,6 +231,7 @@
             this.Controls.Add(this.btnSave);
             this.Name = "ProductPage";
             this.Text = "Product Page";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +255,6 @@
         private TextBox txtUpdateUnitPrice;
         private TextBox txtProductDelete;
         private Button btnSave;
+        private DataGridView dgvProduct;
     }
 }

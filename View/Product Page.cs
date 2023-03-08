@@ -23,8 +23,7 @@ namespace View
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            ProductFrom productFrom = new ProductFrom();
-            productFrom.ShowDialog();
+            dgvProduct.DataSource = _productViewModel.FillGrid();
         }
         private void btnSave_Click(object sender, EventArgs e)
         {

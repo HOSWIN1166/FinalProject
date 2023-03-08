@@ -17,8 +17,7 @@ namespace View
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            PersonFrom personFrom = new PersonFrom();
-            personFrom.ShowDialog();
+            dgvPerson.DataSource = _personViewModel.FillGrid();
 
         }
         private void btnSave_Click(object sender, EventArgs e)
